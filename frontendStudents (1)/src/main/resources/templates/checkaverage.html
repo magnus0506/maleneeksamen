@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Select teacher and subject</title>
+
+</head>
+<body>
+<p id="result">List</p>
+<select id="list" >
+
+    <option value="0">select teacher</option>
+    <option value="1">teacher 2</option>
+    <option value="2">teacher 3</option>
+    <option value="3">teacher 4</option>
+    <option value="4">teacher 5</option>
+</select>
+
+
+
+<script>
+
+    function GetSelectedValue(){
+        let e = document.getElementById("list");
+        let result = e.options[e.selectedIndex].value;
+
+        document.getElementById("result").innerHTML = result;
+    }
+
+
+
+</script>
+
+<br/>
+<br/>
+<button type="button" onclick="GetSelectedValue()">Get Selected Value</button>
+
+
+</body>
+    
+
+
+</html>
+
